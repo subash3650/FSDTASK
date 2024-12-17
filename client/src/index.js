@@ -9,3 +9,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+//docker run --name nginx-container -d -p 80:80 -v C:\Users\subas\OneDrive\Desktop\fsdtask\client\public:/usr/share/nginx/html ngin

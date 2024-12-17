@@ -1,4 +1,4 @@
-FROM node:18
+FROM node:20 AS build
 WORKDIR /server
 COPY package.json package-lock.json ./
 RUN npm install 
