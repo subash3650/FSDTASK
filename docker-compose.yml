@@ -1,15 +1,19 @@
+version: "3.9"
 services:
   client:
     build: ./client
     ports:
-      - "3000:80" 
+      - "3000:3000"  
     depends_on:
       - server
 
   server:
     build: ./server
     ports:
-      - "5000:5000" 
+      - "5000:5000"  
     environment:
+      - HOST=host.docker.internal 
+      - USER=root
+      - PASSWORD=12345678
+      - DATABASE=employees
       - NODE_ENV=production
-
