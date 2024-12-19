@@ -112,17 +112,9 @@ function Form() {
           onChange={onchange}
         >
           <option value="">Select Department</option>
-          <option value="CSE">CSE</option>
-          <option value="IT">IT</option>
-          <option value="CSBS">CSBS</option>
-          <option value="AIDS">AIDS</option>
-          <option value="AIML">AIML</option>
-          <option value="ECE">ECE</option>
-          <option value="CIVIL">CIVIL</option>
-          <option value="MECH">MECH</option>
-          <option value="ACT">ACT</option>
-          <option value="VLSI">VLSI</option>
-          <option value="MECHATRO">MECHATRONICS</option>
+          <option value="CSE">HR</option>
+          <option value="IT">Engineering</option>
+          <option value="CSBS">Marketing</option>
         </select>
         {error.department && <p className="error">{error.department}</p>}
 
